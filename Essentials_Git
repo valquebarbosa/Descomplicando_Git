@@ -1,0 +1,40 @@
+==== Definindo algumas infos ====
+
+1-
+git config --global --list
+git config --global user.name "Valque Barbosa
+git config --global user.email "email"
+git config --global user.user "Usuario"
+
+==== Iniciando o git ====
+
+2-
+git init
+
+==== Clonando um repositorio ====
+
+3-
+git clone "endereço do repositorio no git hub"
+
+==== Conexão git com github =====
+
+ssh-keygen -t rsa -b 4096 -C "seu-email@example.com"
+ls -al ~/.ssh
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+cat ~/.ssh/id_rsa.pub
+
+Acesse as configurações SSH do GitHub em https://github.com/settings/keys.
+Clique em "New SSH key" ou "Adicionar chave SSH"
+Cole a chave pública na caixa apropriada e dê um nome descritivo à chave.
+Clique em "Add SSH key" ou "Adicionar chave SSH".
+
+ssh -T git@github.com
+
+==== Processo para fazer o Commit ====
+
+git status / Para saber se tem algum novo arquivo modificado
+git add "Nome de cada arquivo"
+git add . / Ele carrega todos os aquivos para ser modificado.
+
+
